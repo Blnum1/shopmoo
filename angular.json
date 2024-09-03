@@ -3,19 +3,9 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "shopmoo": {
+    "MOOSHOP": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "standalone": false
-        },
-        "@schematics/angular:directive": {
-          "standalone": false
-        },
-        "@schematics/angular:pipe": {
-          "standalone": false
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -23,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/shopmoo",
+            "outputPath": "dist/mooshop",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -37,6 +27,7 @@
               }
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css", 
               "src/styles.css"
             ],
             "scripts": [],
@@ -74,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "shopmoo:build:production"
+              "buildTarget": "MOOSHOP:build:production"
             },
             "development": {
-              "buildTarget": "shopmoo:build:development"
+              "buildTarget": "MOOSHOP:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -100,6 +91,7 @@
               }
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css", 
               "src/styles.css"
             ],
             "scripts": []
@@ -107,5 +99,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "3ea068bd-1770-4996-9528-a04ac5a8fc47"
   }
 }
