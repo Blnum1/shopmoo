@@ -11,6 +11,7 @@ import { ShipmentComponent } from './shipment/shipment.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SearchComponent } from "./partials/search/search.component";
 
 @NgModule({
   declarations: [
@@ -22,13 +23,15 @@ import { ReactiveFormsModule } from '@angular/forms';
     PriceComponent,
     ShipmentComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
-  ],
+    ReactiveFormsModule,
+    
+],
   providers: [],
   bootstrap: [AppComponent]
 })

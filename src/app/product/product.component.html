@@ -1,181 +1,30 @@
-  <!-- Content -->
-  <div class="container section section-light">
-    <h2>สินค้า</h2>
-    <hr class="border border-danger border-2 opacity-50">
+<app-search></app-search>
+<ul>
+  <li *ngFor="let pork of porks">
+    <a routerLink="/pork/{{pork.id}}">
+      <img [src]="pork.imageUrl" [alt]="pork.name" />
+      <div class="content">
+        <div class="name">
+          {{pork.name}}
+        </div>
+        <span class="favorite {{pork.favorite?'':'not'}}">
+          ❤
+        </span>
+        
+        <div class="product-item-footer">
+          <div class="origins">
+            <span>
+              {{pork.kilo}}
+            </span>
+          </div>
+        </div>
 
-    <h4>เนื้อหมูทั้งหมด / All Pork</h4>
-    <div class="row justify-content-center">
-      <div class="col-md-3">
-        <div class="card">
-          <img src="assets/img/pork1.png">
-          <div class="card-body">
-            <h5 class="card-title">หมูสันใน</h5>
-            <h6 class="weightper">1กก./แพ็ค</h6>
-            <h5 class="price">120 ฿</h5>
-            <a class="oder-link" routerLink="/about-us" style="">
-              + หยิบใส่ตระกร้า
-            </a>
-          </div>
+        <div class="price">
+          <span>
+            {{pork.price | currency}}
+          </span>
         </div>
       </div>
-      <div class="col-md-3">
-        <div class="card">
-          <img src="assets/img/pork2.png" class="card-img-top" alt="หมูสันนอก">
-          <div class="card-body">
-            <h5 class="card-title">หมูสันนอก</h5>
-            <h6 class="weightper">1กก./แพ็ค</h6>
-            <h5 class="price">150 ฿</h5>
-            <a class="oder-link" routerLink="/about-us" style="">
-              + หยิบใส่ตระกร้า
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card">
-          <img src="assets/img/pork3.png" class="card-img-top" alt="สะโพกหมู">
-          <div class="card-body">
-            <h5 class="card-title">สะโพกหมู</h5>
-            <h6 class="weightper">1กก./แพ็ค</h6>
-            <h5 class="price">200 ฿</h5>
-            <a class="oder-link" routerLink="/about-us" style="">
-              + หยิบใส่ตระกร้า
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card">
-          <img src="assets/img/pork4.png" class="card-img-top" alt="สะโพกหมู">
-          <div class="card-body">
-            <h5 class="card-title">สันคอหมู</h5>
-            <h6 class="weightper">1กก./แพ็ค</h6>
-            <h5 class="price">180 ฿</h5>
-            <a class="oder-link" routerLink="/about-us" style="">
-              + หยิบใส่ตระกร้า
-            </a>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-
-    <h4>เครื่องในหมู / Pork Offal</h4>
-    <div class="row justify-content-center">
-      <div class="col-md-3">
-        <div class="card">
-          <img src="assets/img/pork5.png" class="card-img-top" alt="ตับหมู">
-          <div class="card-body">
-            <h5 class="card-title">ตับหมู</h5>
-            <h6 class="weightper">1กก./แพ็ค</h6>
-            <h5 class="price">100 ฿</h5>
-            <a class="oder-link" routerLink="/about-us" style="">
-              + หยิบใส่ตระกร้า
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card">
-          <img src="assets/img/pork6.png" class="card-img-top" alt="ไส้อ่อนหมู">
-          <div class="card-body">
-            <h5 class="card-title">ไส้อ่อนหมู</h5>
-            <h6 class="weightper">1กก./แพ็ค</h6>
-            <h5 class="price">130 ฿</h5>
-            <a class="oder-link" routerLink="/about-us" style="">
-              + หยิบใส่ตระกร้า
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card">
-          <img src="assets/img/pork7.png" class="card-img-top" alt="หัวใจหมู">
-          <div class="card-body">
-            <h5 class="card-title">หัวใจหมู</h5>
-            <h6 class="weightper">1กก./แพ็ค</h6>
-            <h5 class="price">150 ฿</h5>
-            <a class="oder-link" routerLink="/about-us" style="">
-              + หยิบใส่ตระกร้า
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card">
-          <img src="assets/img/mam.png" class="card-img-top" alt="ม้ามหมู">
-          <div class="card-body">
-            <h5 class="card-title">ม้ามหมู</h5>
-            <h6 class="weightper">1กก./แพ็ค</h6>
-            <h5 class="price">110 ฿</h5>
-            <a class="oder-link" routerLink="/about-us" style="">
-              + หยิบใส่ตระกร้า
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <h4>หมูหมัก / Marinated Pork</h4>
-    <div class="row justify-content-center">
-      <div class="col-md-3">
-        <div class="card">
-          <img src="assets/img/pork8.png" class="card-img-top" alt="หมูหมักพริกไทย">
-          <div class="card-body">
-            <h5 class="card-title">หมูหมักพริกไทย</h5>
-            <h6 class="weightper">1กก./แพ็ค</h6>
-            <h5 class="price">160 ฿</h5>
-            <a class="oder-link" routerLink="/about-us" style="">
-              + หยิบใส่ตระกร้า
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card">
-          <img src="assets/img/pork9.png" class="card-img-top" alt="หมูหมักนุ่ม">
-          <div class="card-body">
-            <h5 class="card-title">หมูหมักนุ่ม</h5>
-            <h6 class="weightper">1กก./แพ็ค</h6>
-            <h5 class="price">170 ฿</h5>
-            <a class="oder-link" routerLink="/about-us" style="">
-              + หยิบใส่ตระกร้า
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card">
-          <img src="assets/img/pork10.png" class="card-img-top" alt="หมูหมักนุ่ม">
-          <div class="card-body">
-            <h5 class="card-title">หมูหมักน้ำมันงา
-              <h6 class="weightper">1กก./แพ็ค</h6>
-            <h5 class="price">190 ฿</h5>
-            <a class="oder-link" routerLink="/about-us" style="">
-              + หยิบใส่ตระกร้า
-            </a>
-            </h5>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card">
-          <img src="assets/img/pork11.png" class="card-img-top" alt="หมูหมักสามเกลอ">
-          <div class="card-body">
-            <h5 class="card-title">หมูหมักสามเกลอ
-              <h6 class="weightper">1กก./แพ็ค</h6>
-            <h5 class="price">220 ฿</h5>
-            <a class="oder-link" routerLink="/about-us" style="">
-              + หยิบใส่ตระกร้า
-            </a>
-            </h5>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
- 
-
-  
-
+    </a>
+  </li>
+</ul>
