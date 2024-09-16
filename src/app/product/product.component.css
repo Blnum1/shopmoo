@@ -1,0 +1,193 @@
+/* ปรับแต่งขนาดตัวอักษรและสีของ h2 และ h4 */
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #d9534f; /* สีแดงอ่อน */
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.75rem;
+    color: #5a5a5a; /* สีเทา */
+    margin-bottom: 1rem;
+}
+.oder-link {
+    display: inline-block; /* ทำให้ลิงก์เป็นบล็อกในแนวนอน */
+    padding: 10px 20px; /* เพิ่มระยะห่างภายใน */
+    font-size: 1rem; /* ขนาดตัวอักษร */
+    font-weight: bold; /* ความหนาของตัวอักษร */
+    color: white; /* สีของตัวอักษร */
+    background-color: #28a745; /* สีพื้นหลังของปุ่ม */
+    border: 1px solid #28a745; /* สีของกรอบปุ่ม */
+    border-radius: 5px; /* ความโค้งมนของมุม */
+    text-decoration: none; /* ยกเลิกเส้นใต้ */
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+    transition: background-color 0.3s, border-color 0.3s; /* เอฟเฟกต์การเปลี่ยนแปลงสี */
+}
+
+.oder-link:hover {
+    background-color: #218838; /* สีพื้นหลังเมื่อวางเมาส์ */
+    border-color: #1e7e34; /* สีกรอบเมื่อวางเมาส์ */
+}
+
+.oder-link:active {
+    background-color: #1e7e34; /* สีพื้นหลังเมื่อคลิก */
+    border-color: #1c7430; /* สีกรอบเมื่อคลิก */
+}
+
+
+/* ปรับแต่งเส้นขีด */
+hr {
+    border-top: 3px solid #d9534f;
+    margin-bottom: 2rem;
+}
+
+/* การจัดการ card */
+.card {
+    border: 1px solid #ccc; /* เส้นขอบสีเทาอ่อน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 2rem;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); /* ยกการ์ดขึ้นเมื่อเมาส์เลื่อนผ่าน */
+}
+
+/* การจัดวางภาพ */
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* การจัดการตัวอักษรภายใน card */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.card-body {
+    padding: 1rem;
+    text-align: center;
+}
+.weightper{
+    color: #BEBEBE;
+}
+
+/* จัดการระยะห่างของ row */
+.row {
+    margin-bottom: 3rem;
+}
+
+/* การจัดการ column ให้มีการตอบสนองต่อขนาดหน้าจอ */
+@media (max-width: 768px) {
+    .col-3 {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-3 {
+        width: 24%;
+    }
+}
+
+body {
+  background-color: #f7f7f7;
+  font-family: 'Poppins', sans-serif;
+}
+
+h2, h4 {
+  text-align: center;
+  font-weight: bold;
+  color: #ff6347;
+}
+
+hr {
+  width: 50%;
+  margin: 20px auto;
+}
+
+.navbar {
+  background-color: #ff6347;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: white !important;
+}
+
+.nav-link {
+  color: white !important;
+  font-weight: 500;
+}
+
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+/* เพิ่มสไตล์ให้แต่ละ Section */
+.section {
+  padding: 60px 0;
+}
+
+.section-light {
+  background-color: #f7f7f7;
+}
+
+.section-dark {
+  background-color: #343a40;
+  color: white;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .col-md-3 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.horizontal-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* กำหนดความสูงสูงสุด เพื่อไม่ให้ภาพยืดยาวเกินไป */
+    object-fit: cover; /* ครอบภาพให้เต็มพื้นที่โดยไม่บิดเบี้ยว */
+}
