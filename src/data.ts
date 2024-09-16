@@ -92,7 +92,7 @@ export const sample_Porks: Pork[] = [
         favorite: false,
         stars: 4.0,
         imageUrl: 'assets/img/pork8.png',
-        tags: ['Marinatedpork'],
+        tags: ['Marinated'],
         kilo: 'กก./1แพ็ค',
       },
       {
@@ -102,7 +102,7 @@ export const sample_Porks: Pork[] = [
         favorite: false,
         stars: 4.0,
         imageUrl: 'assets/img/pork9.png',
-        tags: ['Marinatedpork'],
+        tags: ['Marinated'],
         kilo: 'กก./1แพ็ค',
       },
       {
@@ -112,7 +112,7 @@ export const sample_Porks: Pork[] = [
         favorite: false,
         stars: 4.0,
         imageUrl: 'assets/img/pork10.png',
-        tags: ['Marinatedpork'],
+        tags: ['Marinated'],
         kilo: 'กก./1แพ็ค',
       },
       {
@@ -122,7 +122,7 @@ export const sample_Porks: Pork[] = [
         favorite: false,
         stars: 4.0,
         imageUrl: 'assets/img/pork11.png',
-        tags: ['Marinatedpork'],
+        tags: ['Marinated'],
         kilo: 'กก./1แพ็ค',
       },
       
