@@ -6,23 +6,27 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
-  styleUrls: ['./product.component.css']  // ใช้ styleUrls แทน styleUrl
+  styleUrls: ['./product.component.css']
 })
-export class ProductComponent implements OnInit {  // implements OnInit
+export class ProductComponent implements OnInit {
 
-  porks:Pork[] = [];
+  porks: Pork[] = [];
 
-  constructor(private porkService: PorkService, activatedRoute:ActivatedRoute) { 
-    activatedRoute.params.subscribe((params) => {
-      if (params.searchTerm)
-        this.porks = this.porkService.getAllfoodBySearchTerm(params.searchTerm);
-      else 
-        this.porks = porkService.getAll();
-    })
-  }
+  constructor(
+    private porkService: PorkService,
+    private activatedRoute: ActivatedRoute // เพิ่ม private
+  ) { }
 
   ngOnInit(): void {
-    this.porks = this.porkService.getAll();  // ย้ายการกำหนดค่ามาไว้ใน ngOnInit
+    this.activatedRoute.params.subscribe(params => {
+      if (params['searchTerm']) {
+        this.porks = this.porkService.getAllfoodBySearchTerm(params['searchTerm']);
+      } else if (params['tag']) {
+        this.porks = this.porkService.getAllPorksByTag(params['tag']);
+      } else {
+        this.porks = this.porkService.getAll();
+      }
+    });
   }
 
 }

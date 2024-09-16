@@ -10,7 +10,7 @@ export const sample_Porks: Pork[] = [
         favorite: false,
         stars: 4.5,
         imageUrl: 'assets/img/pork1.png',
-        tags: ['Porkmeat'],
+        tags: ['Meat'],
         kilo: 'กก./1แพ็ค',
       },
       {
@@ -21,7 +21,7 @@ export const sample_Porks: Pork[] = [
         favorite: true,
         stars: 4.7,
         imageUrl: 'assets/img/pork2.png',
-        tags: ['Porkmeat'],
+        tags: ['Meat'],
         kilo: 'กก./1แพ็ค',
       },
       {
@@ -32,7 +32,7 @@ export const sample_Porks: Pork[] = [
         favorite: false,
         stars: 3.5,
         imageUrl: 'assets/img/pork3.png',
-        tags: ['Porkmeat'],
+        tags: ['Meat'],
         kilo: 'กก./1แพ็ค',
       },
       {
@@ -42,7 +42,7 @@ export const sample_Porks: Pork[] = [
         favorite: true,
         stars: 3.3,
         imageUrl: 'assets/img/pork4.png',
-        tags: ['Porkmeat'],
+        tags: ['Meat'],
         kilo: 'กก./1แพ็ค',
       },
       {
@@ -52,7 +52,7 @@ export const sample_Porks: Pork[] = [
         favorite: false,
         stars: 3.0,
         imageUrl: 'assets/img/pork5.png',
-        tags: ['Porkoffal'],
+        tags: ['Offal'],
         kilo: 'กก./1แพ็ค',
       },
       {
@@ -62,7 +62,7 @@ export const sample_Porks: Pork[] = [
         favorite: false,
         stars: 4.0,
         imageUrl: 'assets/img/pork6.png',
-        tags: ['Porkoffal'],
+        tags: ['Offal'],
         kilo: 'กก./1แพ็ค',
       },
       {
@@ -72,7 +72,7 @@ export const sample_Porks: Pork[] = [
         favorite: false,
         stars: 4.0,
         imageUrl: 'assets/img/pork7.png',
-        tags: ['Porkoffal'],
+        tags: ['Offal'],
         kilo: 'กก./1แพ็ค',
       },
       {
@@ -82,7 +82,7 @@ export const sample_Porks: Pork[] = [
         favorite: false,
         stars: 4.0,
         imageUrl: 'assets/img/mam.png',
-        tags: ['Porkoffal'],
+        tags: ['Offal'],
         kilo: 'กก./1แพ็ค',
       },
       {
@@ -129,8 +129,8 @@ export const sample_Porks: Pork[] = [
     ]
     
     export const sample_tags:Tag[] = [
-      { name: 'All', count: 11 },
-      { name: 'Pork meat', count: 4 },
-      { name: 'Pork offal', count: 4 },
-      { name: 'Marinatedpork', count: 4 },
+      { name: 'All', count: 12 },
+      { name: 'Meat', count: 4 },
+      { name: 'Offal', count: 4 },
+      { name: 'Marinated', count: 4 },
     ]

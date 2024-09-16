@@ -11,9 +11,11 @@ import { LoginComponent } from './login/login.component';
 
 
 
+
 const routes: Routes = [
   { path: '', component:HomeComponent}, 
-  {path: 'search/:searchTerm', component: ProductComponent},
+  { path: 'search/:searchTerm', component: ProductComponent},
+  { path: 'tag/:tag', component: ProductComponent},
   { path: 'home', component: HomeComponent }, 
   { path: 'product', component: ProductComponent },
   { path: 'about-us', component: AboutUsComponent }, 

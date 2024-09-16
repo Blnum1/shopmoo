@@ -12,6 +12,9 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SearchComponent } from "./partials/search/search.component";
+import { TagsComponent } from './partials/tags/tags.component';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -24,14 +27,17 @@ import { SearchComponent } from "./partials/search/search.component";
     ShipmentComponent,
     RegisterComponent,
     LoginComponent,
-    SearchComponent
+    SearchComponent,
+    TagsComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    
+    CommonModule,
 ],
+exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })
