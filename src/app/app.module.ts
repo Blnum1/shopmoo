@@ -11,10 +11,10 @@ import { ShipmentComponent } from './shipment/shipment.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { SearchComponent } from "./partials/search/search.component";
+import { SearchComponent } from './partials/search/search.component';
 import { TagsComponent } from './partials/tags/tags.component';
-import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { CartPageComponent } from './cart-page/cart-page.component';
+import { TitleComponent } from './partials/title/title.component';
 
 @NgModule({
   declarations: [
@@ -28,16 +28,15 @@ import { RouterModule } from '@angular/router';
     RegisterComponent,
     LoginComponent,
     SearchComponent,
-    TagsComponent
-
+    TagsComponent,
+    CartPageComponent,
+    TitleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    CommonModule,
-],
-exports: [RouterModule],
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

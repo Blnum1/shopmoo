@@ -8,17 +8,18 @@ import { PriceComponent } from './price/price.component';
 import { ShipmentComponent } from './shipment/shipment.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
-
-
-
+import { PorkPageComponent } from './pork-page/pork-page.component';
+import { CartPageComponent } from './cart-page/cart-page.component';
 
 const routes: Routes = [
-  { path: '', component:HomeComponent}, 
-  { path: 'search/:searchTerm', component: ProductComponent},
-  { path: 'tag/:tag', component: ProductComponent},
-  { path: 'home', component: HomeComponent }, 
+  { path: '', component: HomeComponent },
+  { path: 'search/:searchTerm', component: ProductComponent },
+  { path: 'tag/:tag', component: ProductComponent },
+  { path: 'pork/:id', component: PorkPageComponent },
+  { path: 'cart-page', component: CartPageComponent},
+  { path: 'home', component: HomeComponent },
   { path: 'product', component: ProductComponent },
-  { path: 'about-us', component: AboutUsComponent }, 
+  { path: 'about-us', component: AboutUsComponent },
   { path: 'contact-us', component: ContactUsComponent },
   { path: 'price', component: PriceComponent },
   { path: 'shipment', component: ShipmentComponent },
