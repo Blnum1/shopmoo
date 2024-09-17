@@ -15,7 +15,7 @@ import { SearchComponent } from './partials/search/search.component';
 import { TagsComponent } from './partials/tags/tags.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
 import { TitleComponent } from './partials/title/title.component';
-
+import { NotFoundComponent } from './partials/not-found/not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +30,8 @@ import { TitleComponent } from './partials/title/title.component';
     SearchComponent,
     TagsComponent,
     CartPageComponent,
-    TitleComponent
+    TitleComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
